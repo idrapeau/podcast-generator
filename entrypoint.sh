@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Print to the command line
 echo "==================="
 
 git config --global user.name "${GITHUB_ACTOR}"
@@ -11,7 +10,6 @@ python3 /usr/bin/feed.py
 
 git add -A && git commit -m "Update feed"
 
-# Make sure upstream branch is set up
 git push --set-upstream origin main
 
 echo "==================="
